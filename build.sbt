@@ -9,11 +9,11 @@ scalaVersion := "2.10.4"
 resolvers += Resolver.typesafeRepo("releases")
 
 libraryDependencies ++= Seq(
-  "com.typesafe.slick" %% "slick" % "2.0.1",
-  "com.typesafe.play" %% "play-slick" % "0.6.0.1",
-  "org.scalatest" %% "scalatest" % "2.1.5" % "test",
-  "com.typesafe.play" %% "play-test" % "2.2.2" % "test",
-  "com.h2database" % "h2" % "1.3.175" % "test"
+  "com.typesafe.slick" %% "slick" % "2.0.2",
+  "com.typesafe.play" %% "play-slick" % "0.6.1",
+  "org.scalatest" %% "scalatest" % "2.2.0" % "test",
+  "com.typesafe.play" %% "play-test" % "2.2.4" % "test",
+  "com.h2database" % "h2" % "1.4.180" % "test"
 )
 
 incOptions := incOptions.value.withNameHashing(true)
