@@ -32,7 +32,7 @@ private[config] class ConfigurationRepository extends ConfigurationQueries {
   /**
    * @return Some(param_value) or None if key is undefined
    */
-  def byKey(key: String)(implicit session: Session): Option[String] = byKeyQuery(key).firstOption()
+  def byKey(key: String)(implicit session: Session): Option[String] = byKeyQuery(key).firstOption
 
   /**
    * Update if it exist or create new one otherwise.
