@@ -1,5 +1,6 @@
 Configuration table for Slick and Play
 ======================================
+[![Build Status](https://travis-ci.org/VirtusLab/play-slick-configuration.svg?branch=master)](https://travis-ci.org/VirtusLab/play-slick-configuration)
 
 It's a small helper library based on Slick and play-slick plugin from Play! framework. It provides nice type-safe way to serialize properties of custom types to database and then read them back.
 
