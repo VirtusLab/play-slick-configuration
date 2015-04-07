@@ -4,8 +4,6 @@ import play.api.db.slick.Config.driver.simple._
 
 /**
  * Entity for keeping basic configuration in DB.
- *
- * @author Krzysztof Romanowski
  */
 private[config] case class ConfigurationEntry(key: String, value: String)
 

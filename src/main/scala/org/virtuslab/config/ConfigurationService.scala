@@ -4,12 +4,10 @@ import play.api.db.slick.Config.driver.simple._
 
 /**
  * Some base queries for configuration.
- *
- * @author Krzysztof Romanowski
  */
 private[config] trait ConfigurationQueries {
 
-  protected val configurationEntries: TableQuery[ConfigurationEntries] = TableQuery[ConfigurationEntries]
+  protected val configurationEntries = TableQuery[ConfigurationEntries]
 
   protected def byKeyQuery(key: String) = for {
     conf <- configurationEntries
@@ -24,15 +22,13 @@ private[config] trait ConfigurationQueries {
 
 /**
  * Repository for configuration.
- *
- * @author Krzysztof Romanowski
  */
 private[config] class ConfigurationRepository extends ConfigurationQueries {
 
   /**
    * @return Some(param_value) or None if key is undefined
    */
-  def byKey(key: String)(implicit session: Session): Option[String] = byKeyQuery(key).firstOption()
+  def byKey(key: String)(implicit session: Session): Option[String] = byKeyQuery(key).firstOption(session)
 
   /**
    * Update if it exist or create new one otherwise.
