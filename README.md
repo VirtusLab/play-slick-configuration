@@ -1,6 +1,8 @@
 Configuration table for Slick and Play
 ======================================
 
+[![Build Status](https://travis-ci.org/VirtusLab/play-slick-configuration.svg?branch=master)](https://travis-ci.org/VirtusLab/play-slick-configuration)
+
 It's a small helper library based on Slick and play-slick plugin from Play! framework. It provides nice type-safe way to serialize properties of custom types to database and then read them back.
 
 Contributors
@@ -14,15 +16,13 @@ Feel free to use it, test it and to contribute!
 Getting play-slick-configuration
 --------------------------------
 
-Library is not currently in any repository, so you have to download it and use `sbt` to use an artifact.
-
-If you install it locally (`sbt publishLocal`) you can add it to your projects using:
+Library is available in sonatype and Maven central since version 1.1.0.
 
 ```scala
-libraryDependencies += "org.virtuslab" %% "play-slick-configuration" % "1.0"
+libraryDependencies += "org.virtuslab" %% "play-slick-configuration" % "1.2.0"
 ```
 
-Master is built against Slick 2.x, for Slick 1.x use [slick-1.0](https://github.com/Kwestor/play-slick-configuration/tree/slick-1.0) branch.
+This branch is built against Slick 2.1.x, for Slick 1.x use [slick-1.0](https://github.com/Kwestor/play-slick-configuration/tree/slick-1.0) branch.
 
 Examples
 ========
