@@ -6,7 +6,6 @@ import play.api.db.slick.Config.driver.simple._
  * Class for easy configuration management.
  *
  * @param name name of property
- * @author Jerzy Müller
  */
 case class ConfigurationParam[A: ConfigurationSerializer](name: String) {
 

@@ -10,7 +10,6 @@ import scala.concurrent.duration.FiniteDuration
  * Type class for reading and writing configuration values from/to db.
  *
  * @tparam A type of field to save
- * @author Jerzy Müller
  */
 trait ConfigurationSerializer[A] {
   def write(a: A): String
@@ -20,7 +19,6 @@ trait ConfigurationSerializer[A] {
 
 /**
  * Common serializers.
- * @author Jerzy Müller
  */
 object ConfigurationSerializer {
 

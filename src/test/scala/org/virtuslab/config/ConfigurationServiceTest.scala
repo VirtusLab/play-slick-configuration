@@ -5,9 +5,6 @@ import org.joda.time.DateTime
 import org.joda.time.Duration
 import scala.concurrent.duration.FiniteDuration
 
-/**
- * @author Krzysztof Romanowski, Jerzy Müller
- */
 class ConfigurationServiceTest extends AppTest {
 
   behavior of "Configuration API"

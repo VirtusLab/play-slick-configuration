@@ -26,7 +26,7 @@ trait AppTest extends BaseTest with BeforeAndAfterEach {
   }
 
   override protected def afterEach(data: TestData): Unit = {
-    Play.stop()
+    Play.stop(app)
     super.afterEach()
   }
 

@@ -4,8 +4,6 @@ import play.api.db.slick.Config.driver.simple._
 
 /**
  * Some base queries for configuration.
- *
- * @author Krzysztof Romanowski
  */
 private[config] trait ConfigurationQueries {
 
@@ -24,8 +22,6 @@ private[config] trait ConfigurationQueries {
 
 /**
  * Repository for configuration.
- *
- * @author Krzysztof Romanowski
  */
 private[config] class ConfigurationRepository extends ConfigurationQueries {
 
