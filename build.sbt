@@ -1,27 +1,27 @@
-import xerial.sbt.Sonatype.autoImport.sonatypePublishTo
+import sbt.{ Credentials, Path }
+
 organization := "org.virtuslab"
 
 name := "play-slick-configuration"
 
-version := "2.4.0-SNAPSHOT"
+version := "2.5.0-SNAPSHOT"
 
-val scala_2_11 = "2.11.12"
-val scala_2_12 = "2.12.8"
-val scala_2_13 = "2.13.0"
+val scala_2_12 = "2.12.11"
+val scala_2_13 = "2.13.2"
 
 scalaVersion := scala_2_13
 
-crossScalaVersions := List(scala_2_11, scala_2_12, scala_2_13)
+crossScalaVersions := List(scala_2_13, scala_2_12)
 
 resolvers += Resolver.typesafeRepo("releases")
 
 libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick" % "3.3.2",
-  "com.typesafe.play" %% "play-slick" % "4.0.2",
+  "com.typesafe.play" %% "play-slick" % "5.0.0",
   "org.scalatest" %% "scalatest" % "3.0.8" % "test",
-  "com.typesafe.play" %% "play-test" % "2.7.3" % "test",
+  "com.typesafe.play" %% "play-test" % "2.8.2" % "test",
   "com.h2database" % "h2" % "1.4.199" % "test",
-  "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
+  "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test
 )
 
 pomExtra := <url>https://github.com/VirtusLab/play-slick-configuration</url>
